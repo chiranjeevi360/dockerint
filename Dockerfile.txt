@@ -1,3 +1,2 @@
-FROM alpine
-RUN apk add --updatee redis
-CMD ['redis-server']
+FROM ngnix:latest
+COPY . /usr/share/ngnix/html
